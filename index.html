@@ -25,7 +25,6 @@
 	color: #663300;
 	width: 75px;
 }
-
 .buttonStyle:hover {
 	border: thin solid #FFCC00;
 	background-color: #FCF9D6;
@@ -38,23 +37,24 @@
 	color: #669900;
 	cursor: pointer;
 }
-
 </style>
 </head>
 
 <body>
 <div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
+<p id="helloText">Nie naciskaj czerwonego przycisku!</p>
+<button id="clickButton" class="buttonStyle">Nacisnij</button>
+
 </div>
 <script> 
 var myButton = document.getElementById("clickButton");
+ myButton.style.backgroundColor = "red"
+ 
 var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
+  myButton.addEventListener('click', doSomething, false)
 function doSomething() {
-	myText.textContent = "hello, world!";
+	myText.textContent = "AKTYWOWALES BOMBE!";
+	
 }
 </script>
 

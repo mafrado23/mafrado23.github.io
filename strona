@@ -40,21 +40,31 @@
 </style>
 </head>
 
-<body>
+<body style="background-color:red">
 <div id="mainContent">
+	<p style="color:red"> UWAGA </p>
 <p id="helloText">Nie naciskaj czerwonego przycisku!</p>
 <button id="clickButton" class="buttonStyle">Nacisnij</button>
+
+<h2></h2>
+<img src="http://allsigns24.net/environment/cache/images/300_300_productGfx_9e0826358099c37c1c273cb586e7ad8e.jpg" alt="http://allsigns24.net" style="width:225px;height:250px;">
+
+
 
 </div>
 <script> 
 var myButton = document.getElementById("clickButton");
  myButton.style.backgroundColor = "red"
+ 	
+
+ 
  
 var myText = document.getElementById("helloText");
   myButton.addEventListener('click', doSomething, false)
 function doSomething() {
 	myText.textContent = "AKTYWOWALES BOMBE!";
-	
+
+
 }
 </script>
 
